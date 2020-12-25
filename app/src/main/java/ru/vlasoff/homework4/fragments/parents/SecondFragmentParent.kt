@@ -11,7 +11,7 @@ import ru.vlasoff.homework4.R
 import ru.vlasoff.homework4.fragments.children.SecondFragmentChild
 import ru.vlasoff.homework4.util.ArgumentManager
 
-class SecondFragmentParent : Fragment(R.layout.fragment_second_child) {
+class SecondFragmentParent : Fragment(R.layout.fragment_second) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

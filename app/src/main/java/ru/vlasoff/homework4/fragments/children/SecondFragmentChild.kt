@@ -10,6 +10,7 @@ import ru.vlasoff.homework4.R
 import ru.vlasoff.homework4.databinding.FragmentSecondChildBinding
 import ru.vlasoff.homework4.fragments.parents.SecondFragmentParent
 import ru.vlasoff.homework4.util.ArgumentManager
+import ru.vlasoff.homework4.R.id.containerViewParentSecond
 
 class SecondFragmentChild : Fragment(R.layout.fragment_second_child) {
 
@@ -27,7 +28,7 @@ class SecondFragmentChild : Fragment(R.layout.fragment_second_child) {
             parentFragmentManager.beginTransaction().apply {
                 setReorderingAllowed(true)
                 add(
-                    R.id.containerViewParentSecond,
+                    containerViewParentSecond,
                     SecondFragmentChild::class.java,
                     argumentManager.createArgs(counter + 1)
                 )
